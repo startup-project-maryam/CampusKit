@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CampusKit UAE – notebooks, pens and exam kits for Dubai students</title>
+<meta name="description" content="Stationery and study kits for university students in Dubai. Delivered to campus.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Poppins:wght@400;500;600;700&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<p class="topbar">Free delivery to Dubai campuses on orders over AED 120</p>
+<header class="site-header">
+  <a class="logo" href="#top">CampusKit <small>UAE</small></a>
+  <nav id="nav"><a href="#shop">Shop</a><a href="#kits">Kits</a><a href="#delivery">Delivery</a><a href="#about">About</a></nav>
+  <button class="bag" id="bagBtn" aria-label="Open bag"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.7 12.4a1 1 0 0 0 1 .8h8.8a1 1 0 0 0 1-.8L20 7H6"/></svg><span id="bagCount" hidden>0</span></button>
+  <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav"><i></i><i></i><i></i></button>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="hero-copy">
+    <h1>Study gear that actually gets used.</h1>
+    <p>Notebooks, pens, flashcards and full semester kits, picked by students at University of Wollongong in Dubai and delivered to your campus.</p>
+    <div class="hero-links"><a class="btn" href="#shop">Shop now</a><a class="btn ghost" href="#kits">See the kits</a></div>
+  </div>
+</section>
+<ul class="trust"><li><b>Free delivery</b> on orders over AED 120</li><li><b>1–2 days</b> to Dubai campuses</li><li><b>7-day returns</b> on unused items</li></ul>
+
+<section class="shop" id="shop">
+  <div class="shop-top">
+    <h2>Shop</h2>
+    <div class="filters" role="group" aria-label="Filter products">
+      <button class="on" data-f="all">Everything</button>
+      <button data-f="stationery">Stationery</button>
+      <button data-f="study">Study gear</button>
+      <button data-f="kits">Kits</button>
+    </div>
+  </div>
+  <div class="grid" id="grid"></div>
+</section>
+
+<section class="kits" id="kits">
+  <h2>Don’t want to choose? Take a kit.</h2>
+  <p class="kits-intro">Same products as the shop, bundled and cheaper than buying them one by one.</p>
+  <div class="kit-list" id="kitList"></div>
+</section>
+
+
+
+<section class="about" id="about"><div class="about-img"><img src="https://images.pexels.com/photos/7972488/pexels-photo-7972488.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Two students studying together on campus steps" loading="lazy"></div><div class="about-text"><h2>Who’s behind this</h2><p>CampusKit started as a group project at UOWD. The idea is simple: good basics, fair prices, no scrambling the night before a deadline. If you have a product you wish we stocked, tell us.</p></div>
+</section>
+<section class="info" id="delivery">
+  <div class="faq-intro"><h2>Delivery and other questions</h2><p>Quick answers before you order. If something is missing, tell us what you wish we stocked.</p></div>
+  <div class="faq">
+    <h3>Delivery</h3>
+    <details open><summary>Where do you deliver?</summary><p>Dubai university campuses, to a drop point or reception desk.</p></details>
+    <details><summary>How long does it take?</summary><p>Usually 1–2 working days inside Dubai.</p></details>
+    <details><summary>How much is delivery?</summary><p>Orders over AED 120 ship free. Under that it’s AED 15. The bag shows how much more you need for free delivery.</p></details>
+    <h3>Orders and returns</h3>
+    <details><summary>Can I return something?</summary><p>Yes, unused items within 7 days. Message us and we’ll sort it out.</p></details>
+    <details><summary>What’s in a kit, and do I save money?</summary><p>Kits bundle the same products as the shop for less. Each kit lists what’s inside and what it would cost bought separately.</p></details>
+    <details><summary>Do I need an account?</summary><p>No. Add items to your bag and check out with your name, email and delivery area.</p></details>
+    <h3>About the shop</h3>
+    <details><summary>Is this a real shop?</summary><p>Not yet. This is a demo store for a university entrepreneurship project, so the checkout works but nothing is charged or shipped.</p></details>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="foot-grid">
+    <div><a class="logo" href="index.html#top">CampusKit <small>UAE</small></a><p>Notebooks, pens and exam kits for university students in Dubai. A student project.</p></div>
+    <div><h4>Shop</h4><a href="index.html#shop">All products</a><a href="index.html#kits">Kits</a></div>
+    <div><h4>Help</h4><a href="index.html#delivery">Delivery and returns</a><a href="index.html#delivery">FAQ</a><a href="index.html#about">About us</a></div>
+    <div><h4>Delivery</h4><p>Free over AED 120, otherwise AED 15. Usually 1–2 working days to Dubai campuses.</p></div>
+  </div>
+  <div class="foot-bar"><span>© 2026 CampusKit UAE</span><span>Student project, University of Wollongong in Dubai. All prices in AED. Photos from Unsplash and Pexels.</span></div>
+</footer>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-label="Your bag">
+  <div class="drawer-head"><h2>Your bag</h2><button class="x" id="closeBag" aria-label="Close bag">×</button></div>
+  <div id="lines" class="lines"></div>
+  <div class="totals" id="totals"></div>
+  <button class="btn full" id="checkoutBtn">Checkout</button>
+</aside>
+<dialog id="dlg"><button class="x" id="dlgClose" aria-label="Close">×</button><div id="dlgBody"></div></dialog>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
